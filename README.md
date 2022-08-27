@@ -1,24 +1,30 @@
-# README
+# Hello-rails-back-end
+This litte API provides different greetings
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
+ Link for the front end [repo](https://github.com/Have-Samuel/hello-frontend/pull/1)
+  * Clone the repo and run the following commands on the terminal
+```
+ git clone https://github.com/Have-Samuel/helloRailsBackend.git
 
-Things you may want to cover:
+ cd helloRailsBackend
 
-* Ruby version
+bundle install
 
-* System dependencies
+```
 
-* Configuration
+* Go to config/database.yml
+* After default put
+```
+username: your_postgres_database_username
+password: your_postgres_database_password
+```
 
-* Database creation
+Finally run
 
-* Database initialization
+```
+rails db:create db:migrate db:seed
 
-* How to run the test suite
+rails s
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
