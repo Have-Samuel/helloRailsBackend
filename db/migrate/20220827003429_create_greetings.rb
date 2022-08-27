@@ -1,7 +1,7 @@
-class CreateGreeting < ActiveRecord::Migration[7.0]
+class CreateGreetings < ActiveRecord::Migration[7.0]
   def change
     create_table :greetings do |t|
-      t.string :greeting
+      t.text :greeting
 
       t.timestamps
     end
